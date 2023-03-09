@@ -1,3 +1,2 @@
 #!/bin/bash
 for file in $(ls *.html); do if [[ ! -e ../$file || $file -nt ../$file ]]; then cp $file ../; fi; done
-
